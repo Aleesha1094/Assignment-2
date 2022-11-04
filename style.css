@@ -1,0 +1,238 @@
+*{
+    margin: 10px;
+}
+.background{
+    background: lightcyan;
+    text-align: center;
+}
+h1.background{
+    font-style: normal;
+}
+p:nth-child(1){
+    font-style: italic;
+}
+p:first-of-type{
+    color:darkslategrey;
+}
+input:focus{
+    background-color: yellow;
+}
+.background:hover{
+    background-image: url("green.jpg");
+    opacity: 0.8;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+#animate:hover{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    transition-duration: 2s;
+    transition-property: video;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-size: larger;
+    animation-play-state: running ;
+}
+
+@keyframes example{
+    from{height: 40%; width:20%; transform: rotate(0deg);}
+    to{height: 40%; width:20%; transform: rotate(180deg);}
+}
+#b-clip{
+    border: 10px dotted black;
+    padding: 15px;
+    background-color: lightblue;
+    background-clip: border-box; 
+    background-origin: border-box;
+}
+textarea:in-range{
+    border: 2px solid yellow;
+}
+#outline{
+    outline-style: dashed;
+    outline-width: 2px;
+    outline-color:thistle;
+    outline-offset: 5px;
+}
+
+#b-attach{
+    background-position: right top;
+    background-attachment: scroll; 
+    float: right;
+}
+
+#border{
+    /* border: 5px; */
+    border-color: brown;
+    border-bottom-style: groove ;
+    border-bottom-color: cadetblue ;
+    border-bottom-width: 5px ;
+}
+a[target]{
+    background-color: yellow;
+}
+a[target=_blank]{
+    font-weight: bold;
+}
+a[href*="w3schools"]{
+    background-color: yellow;
+}
+
+#bor-bottom{
+    border: 2px solid slategrey;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+#bor-img{
+    /* width: 300px; */
+    height: 150px;
+    border: 10px solid transparent;
+    border-image: 30 30;
+    border-image-source: url("card.png");
+    border-image-slice: 100;
+    border-image-width: 10px ;
+    border-image-outset: 10px;
+    border-image-repeat: round;
+}
+a[href^="https"] {
+    border: 1px solid grey;
+}
+a:active {
+    background-color: yellow;
+  }
+#bor-left{
+    border-left: solid;
+    border-left-style: groove ;
+    border-left-color: cadetblue ;
+    border-left-width: 5px ;
+}
+
+#bor-right{
+    border-right: solid;
+    border-radius: 50px;
+    border-right-style: groove ;
+    border-right-color: cadetblue ;
+    border-right-width: 5px ;
+}
+p#bor-bottom{
+    font-size: large;
+}
+
+#bor-top{
+    border-top: solid;
+    border-top-style: groove ;
+    border-top-color: cadetblue ;
+    border-top-width: 5px ;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+a:link{
+    color: blue;
+}
+
+#list li{
+    list-style: none;
+    list-style-type:none;
+    list-style-image: url("red.png");
+    list-style-position: outside;
+}
+#bor-top h3{
+    color:seagreen;
+}
+
+p:last-child{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#dimension, img{
+    max-width: 300px;
+    max-height: 200px;
+    min-width: none;
+    min-height: auto;
+}
+div>mark{
+    font-weight: bold;
+}
+
+p::first-letter{
+    font-weight: bold;
+}
+
+h1::first-line{
+    font-style: italic;
+}
+
+#content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pre::before {
+    content: "Note: ";
+    display: inline;
+}
+
+#qoute{
+    quotes: '[' ']' '"' '"';
+}
+#qoute:before {
+    content: open-quote;
+}
+#qoute:after {
+    content: close-quote;
+}
+
+#table{
+    page-break-after:left ;
+    border-collapse:separate;
+    border-spacing: 20px;
+    caption-side: top;
+    empty-cells: show;
+    table-layout: fixed;
+}
+
+#transform:hover{
+    backface-visibility: visible;
+    transform: translate(200px, 50px);
+    transform-origin: center ;
+    transform-style: flat ;
+    perspective: 50px;
+    perspective-origin: 50px;
+}
+#text{
+    text-decoration-line: none;
+    text-transform: capitalize;
+    text-shadow: 5px ;
+    text-overflow: ellipsis;
+    text-align: justify;
+    text-align-last: center ;
+    text-indent: 10px;
+}
+
+#text2{
+    text-shadow: 10px;
+    line-height: normal;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: break-word;
+    white-space:inherit ;
+    letter-spacing: normal;
+}
+
+#embed{
+    position: relative;
+    clip: rect(0px,50px,200px,10px);
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+p{
+    font-size: medium;
+}
